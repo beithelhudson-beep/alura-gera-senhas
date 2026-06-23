@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-card">
+        <header class="glass-header">
+            <h1>LockBox</h1>
+            <p>Segurança inteligente com design moderno</p>
+        </header>
+
+        <div class="visor-container">
+            <input type="text" id="campo-resultado" readonly value="..." placeholder="Gerando...">
+        </div>
+
+        <div class="controles-container">
+            <div class="linha-controle">
+                <span>Caracteres</span>
+                <div class="ajuste-comprimento">
+                    <button id="diminuir-tamanho" class="btn-controle">-</button>
+                    <span id="valor-comprimento">12</span>
+                    <button id="aumentar-tamanho" class="btn-controle">+</button>
+                </div>
+            </div>
+
+            <div class="linha-divisor"></div>
+
+            <div class="grid-seletores">
+                <label class="tag-seletora">
+                    <input type="checkbox" id="chk-alta" checked>
+                    <div class="tag-conteudo">MAIÚSCULAS</div>
+                </label>
+                <label class="tag-seletora">
+                    <input type="checkbox" id="chk-baixa" checked>
+                    <div class="tag-conteudo">MINÚSCULAS</div>
+                </label>
+                <label class="tag-seletora">
+                    <input type="checkbox" id="chk-num">
+                    <div class="tag-conteudo">NÚMEROS</div>
+                </label>
+                <label class="tag-seletora">
+                    <input type="checkbox" id="chk-simb">
+                    <div class="tag-conteudo">SÍMBOLOS</div>
+                </label>
+            </div>
+
+            <div class="linha-divisor"></div>
+
+            <div class="status-box" id="feedback-status">
+                <p id="texto-feedback">Ajuste os filtros de proteção.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
